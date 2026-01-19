@@ -1,15 +1,64 @@
 OOPS basics Codes
 Code 1
 Class and Object creation
+
 class student{
 int rollno;
 String name;
 }
-public class main{
-public static void main(String [] args){
+public class main
+{
+public static void main(String [] args)
+  {
 student obj=new student();
 obj.name="isha";
 obj.rollno=1;
 System.out.println(obj.rollno);
+   }
 }
+
+Code 2
+
+
+public class Student {
+    int rollno;
+    String name;
+    
+    
+    Student(){
+        rollno = 1;
+        name = "Isha";
+    }
+}
+public class main
+{
+    public static void main(String [] args)
+    {
+        Student obj=new Student();
+        obj.name="isha";
+        obj.rollno=1;
+        System.out.println(obj.rollno);
+    }
+}
+
+code 3
+class Student {
+    int rollno;
+    String name;
+
+
+    Student(int i,String n){
+        rollno = i;
+        name = n;
+    }
+}
+class main
+{
+    public static void main(String [] args)
+    {
+        Student obj=new Student(2,"Isha");
+        obj.name="isha";
+        obj.rollno=1;
+        System.out.println(obj.rollno);
+    }
 }
