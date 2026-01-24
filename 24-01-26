@@ -1,0 +1,126 @@
+4) Multiple(not supported in java directly)
+Code 1
+//interface
+//an interface in java is an abstract type that defines a set
+//of methods a class must implement
+//multiple inheritance using interfaces
+interface tv{
+    void watchingTv();
+}
+
+interface food{
+    void eatingFood();
+}
+//student class inherits multiple interfaces
+class Student implements tv, food{
+    public void watchingTv(){
+        System.out.println("watchingTv");
+        
+    }
+     public void eatingFood(){
+        System.out.println("eatingFood");
+        
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Student s = new Student();
+		s.watchingTv();
+		s.eatingFood();
+	}
+}
+CONSTRUCTOR Inheritance
+Code 2
+//Constructor inheritance 
+class Person {
+    Person(String name) {
+        System.out.println("Person Name: " + name);
+    }
+}
+
+class CollegeStudent extends Person {
+    CollegeStudent (String name) {
+        super(name); // parent class constructor called
+        System.out.println("College student constructor called"); // child class constructor called
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		CollegeStudent std = new CollegeStudent("Aman");
+		
+	}
+}
+
+ATTRIBUTE Inheritance
+Code 3
+//inheriting attributes
+//Inheriting attributes // variable
+
+class University{
+    String universityName = "IILM University";
+    
+}
+
+class College extends University{
+    void displayUniversityName(){
+        System.out.println("university:" + universityName);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		College c = new College();
+		c.dispalyUniversityName();
+	}
+}
+METHOD Inheritance
+//Inheriting methods 
+
+class Parent{
+    void pocketMoney(){
+        System.out.println(" Pocket Money Credit");
+    }
+    
+}
+
+class Child extends Parent{
+    void freelancing(){
+        System.out.println("khud ka paisa");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Child c = new Child();
+		c.pocketMoney();
+		c.freelancing();
+	}
+}
+
+METHOD OVERRIDING
+Code 4
+//Method overriding
+
+class CollegeStudent{
+    void task(){
+        System.out.println(" Eating Food");
+    }
+    
+}
+
+class Student extends CollegeStudent{
+    @Override
+    void task(){
+        System.out.println("drinking water");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		CollegeStudent obj = new Student();
+	    obj.task();
+	}
+}
