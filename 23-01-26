@@ -72,4 +72,5 @@ public class Main{
         obj.drive();
     }
 }
-4) Hybrid
+4) Multiple
+5) Hybrid
