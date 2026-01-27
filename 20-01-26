@@ -64,6 +64,7 @@ public class Main {
 
 //Local variable
 //global variable -- instance
-//static(defined using static keyword)
+//static(defined using static keyword)refers to a particular object
+//dependency-"is a" relationship
 
 
